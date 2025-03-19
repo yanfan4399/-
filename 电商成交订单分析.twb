@@ -1,0 +1,2111 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='拌客源数据1-8月 (Excel练习(1))' inline='true' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Excel练习(1)' name='excel-direct.1y2jr5c189g1xi1h0pxex0e6ez13'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/86188/OneDrive/桌面/Excel练习(1).xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1y2jr5c189g1xi1h0pxex0e6ez13' name='拌客源数据1-8月' table='[&apos;拌客源数据1-8月$&apos;]' type='table'>
+          <columns gridOrigin='A1:V562:no:A1:V562:0' header='yes' outcome='2'>
+            <column datatype='date' name='日期' ordinal='0' />
+            <column datatype='integer' name='品牌ID' ordinal='1' />
+            <column datatype='string' name='品牌名称' ordinal='2' />
+            <column datatype='string' name='门店ID' ordinal='3' />
+            <column datatype='string' name='门店名称' ordinal='4' />
+            <column datatype='string' name='城市' ordinal='5' />
+            <column datatype='string' name='平台' ordinal='6' />
+            <column datatype='real' name='GMV' ordinal='7' />
+            <column datatype='real' name='商家实收' ordinal='8' />
+            <column datatype='integer' name='门店曝光量' ordinal='9' />
+            <column datatype='integer' name='门店访问量' ordinal='10' />
+            <column datatype='integer' name='门店下单量' ordinal='11' />
+            <column datatype='integer' name='无效订单' ordinal='12' />
+            <column datatype='integer' name='有效订单' ordinal='13' />
+            <column datatype='integer' name='曝光人数' ordinal='14' />
+            <column datatype='integer' name='进店人数' ordinal='15' />
+            <column datatype='integer' name='下单人数' ordinal='16' />
+            <column datatype='real' name='cpc总费用' ordinal='17' />
+            <column datatype='integer' name='cpc曝光量' ordinal='18' />
+            <column datatype='integer' name='cpc访问量' ordinal='19' />
+            <column datatype='integer' name='商户补贴' ordinal='20' />
+            <column datatype='integer' name='平台补贴' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:V562:no:A1:V562:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>日期</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[日期]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>日期</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>品牌ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[品牌ID]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>品牌ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>品牌名称</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[品牌名称]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>品牌名称</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>门店ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[门店ID]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>门店ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>门店名称</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[门店名称]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>门店名称</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>城市</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[城市]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>城市</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平台</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[平台]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>平台</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GMV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GMV]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>GMV</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>商家实收</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[商家实收]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>商家实收</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>门店曝光量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[门店曝光量]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>门店曝光量</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>门店访问量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[门店访问量]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>门店访问量</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>门店下单量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[门店下单量]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>门店下单量</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>无效订单</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[无效订单]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>无效订单</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>有效订单</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[有效订单]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>有效订单</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>曝光人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[曝光人数]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>曝光人数</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>进店人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[进店人数]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>进店人数</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>下单人数</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[下单人数]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>下单人数</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpc总费用</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cpc总费用]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>cpc总费用</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpc曝光量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpc曝光量]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>cpc曝光量</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpc访问量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpc访问量]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>cpc访问量</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>商户补贴</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[商户补贴]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>商户补贴</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平台补贴</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[平台补贴]</local-name>
+            <parent-name>[拌客源数据1-8月]</parent-name>
+            <remote-alias>平台补贴</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='总订单数' datatype='integer' name='[Calculation_1845068526807662592]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([有效订单])+SUM([无效订单])' />
+      </column>
+      <column caption='无效订单率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526807998465]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([无效订单])/[Calculation_1845068526807662592]' />
+      </column>
+      <column caption='实收占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526808616962]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([商家实收])/SUM([GMV])' />
+      </column>
+      <column caption='门店数' datatype='integer' name='[Calculation_1845068526811975683]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([门店名称])' />
+      </column>
+      <column caption='补贴占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526816317444]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([商户补贴])/SUM([GMV])' />
+      </column>
+      <column caption='自然曝光人数' datatype='integer' name='[Calculation_1845068526820298757]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([曝光人数])-SUM([cpc曝光量])' />
+      </column>
+      <column caption='自然进店人数' datatype='integer' name='[Calculation_1845068526820446214]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([进店人数])-SUM([cpc访问量])' />
+      </column>
+      <column caption='自然曝光占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526820925447]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1845068526820298757]/SUM([曝光人数])' />
+      </column>
+      <column caption='自然进店占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526821138440]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1845068526820446214]/SUM([进店人数])' />
+      </column>
+      <column caption='进店/曝光率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823198729]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([进店人数])/SUM([曝光人数])' />
+      </column>
+      <column caption='计算 1' datatype='real' name='[Calculation_1845068526823428106]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column caption='下单/进店率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823497739]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([下单人数])/SUM([进店人数])' />
+      </column>
+      <column caption='经营天数' datatype='integer' name='[Calculation_1845068526826184716]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([日期 (天)])' />
+      </column>
+      <column caption='单均实收' datatype='real' name='[Calculation_1845068526826438669]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([商家实收])/[Calculation_1845068526807662592]' />
+      </column>
+      <column caption='天均实收' datatype='real' name='[Calculation_1845068526826831886]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([商家实收])/[Calculation_1845068526811975683]' />
+      </column>
+      <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+      <column caption='拌客源数据1-8月' datatype='table' name='[__tableau_internal_object_id__].[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]' role='measure' type='quantitative' />
+      <column caption='Cpc总费用' datatype='real' name='[cpc总费用]' role='measure' type='quantitative' />
+      <column caption='Cpc曝光量' datatype='integer' name='[cpc曝光量]' role='measure' type='quantitative' />
+      <column caption='Cpc访问量' datatype='integer' name='[cpc访问量]' role='measure' type='quantitative' />
+      <column caption='品牌id' datatype='integer' name='[品牌ID]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[商家实收]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[商户补贴]' role='measure' type='quantitative' />
+      <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+        <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+      </column>
+      <column datatype='integer' name='[曝光人数]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[进店人数]' role='measure' type='quantitative' />
+      <column caption='门店id' datatype='string' name='[门店ID]' role='dimension' type='nominal' />
+      <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+      <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+      <column-instance column='[商家实收]' derivation='Sum' name='[pcto:sum:商家实收:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[GMV]' derivation='Sum' name='[sum:GMV:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cpc总费用]' derivation='Sum' name='[sum:cpc总费用:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[商家实收]' derivation='Sum' name='[sum:商家实收:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[商户补贴]' derivation='Sum' name='[sum:商户补贴:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[曝光人数]' derivation='Sum' name='[sum:曝光人数:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[进店人数]' derivation='Sum' name='[sum:进店人数:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526816317444]' derivation='User' name='[usr:Calculation_1845068526816317444:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526820298757]' derivation='User' name='[usr:Calculation_1845068526820298757:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526820446214]' derivation='User' name='[usr:Calculation_1845068526820446214:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526820925447]' derivation='User' name='[usr:Calculation_1845068526820925447:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526821138440]' derivation='User' name='[usr:Calculation_1845068526821138440:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526823198729]' derivation='User' name='[usr:Calculation_1845068526823198729:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1845068526823497739]' derivation='User' name='[usr:Calculation_1845068526823497739:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='业务架构'>
+          <field>[品牌名称]</field>
+          <field>[品牌ID]</field>
+          <field>[门店名称]</field>
+          <field>[平台]</field>
+          <field>[门店ID]</field>
+        </drill-path>
+      </drill-paths>
+      <folders-common>
+        <folder name='成本'>
+          <folder-item name='[Calculation_1845068526816317444]' type='field' />
+          <folder-item name='[cpc总费用]' type='field' />
+          <folder-item name='[商户补贴]' type='field' />
+          <folder-item name='[平台补贴]' type='field' />
+        </folder>
+        <folder name='流量'>
+          <folder-item name='[Calculation_1845068526820298757]' type='field' />
+          <folder-item name='[Calculation_1845068526820446214]' type='field' />
+          <folder-item name='[Calculation_1845068526820925447]' type='field' />
+          <folder-item name='[Calculation_1845068526821138440]' type='field' />
+          <folder-item name='[Calculation_1845068526823198729]' type='field' />
+          <folder-item name='[Calculation_1845068526823497739]' type='field' />
+          <folder-item name='[cpc曝光量]' type='field' />
+          <folder-item name='[cpc访问量]' type='field' />
+          <folder-item name='[下单人数]' type='field' />
+          <folder-item name='[曝光人数]' type='field' />
+          <folder-item name='[进店人数]' type='field' />
+        </folder>
+        <folder name='营收'>
+          <folder-item name='[Calculation_1845068526807662592]' type='field' />
+          <folder-item name='[Calculation_1845068526807998465]' type='field' />
+          <folder-item name='[Calculation_1845068526808616962]' type='field' />
+          <folder-item name='[Calculation_1845068526811975683]' type='field' />
+          <folder-item name='[Calculation_1845068526826184716]' type='field' />
+          <folder-item name='[Calculation_1845068526826438669]' type='field' />
+          <folder-item name='[Calculation_1845068526826831886]' type='field' />
+          <folder-item name='[GMV]' type='field' />
+          <folder-item name='[商家实收]' type='field' />
+          <folder-item name='[无效订单]' type='field' />
+          <folder-item name='[有效订单]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='zh_CN' class='hyper' dbname='C:/Users/86188/OneDrive/文档/我的 Tableau 存储库/数据源/拌客源数据1-8月 (Excel练习(1)).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/07/2025 12:26:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='拌客源数据1-8月 (Excel练习(1))' increment-value='%null%' refresh-type='create' rows-inserted='561' timestamp-start='2025-03-07 12:26:21.455' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>日期</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[日期]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>日期</remote-alias>
+              <ordinal>0</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>品牌ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[品牌ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>品牌ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>品牌名称</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[品牌名称]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>品牌名称</remote-alias>
+              <ordinal>2</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>门店ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[门店ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>门店ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>门店名称</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[门店名称]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>门店名称</remote-alias>
+              <ordinal>4</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>城市</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[城市]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>城市</remote-alias>
+              <ordinal>5</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>平台</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[平台]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>平台</remote-alias>
+              <ordinal>6</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GMV</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GMV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GMV</remote-alias>
+              <ordinal>7</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>556</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>商家实收</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[商家实收]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>商家实收</remote-alias>
+              <ordinal>8</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>554</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>门店曝光量</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[门店曝光量]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>门店曝光量</remote-alias>
+              <ordinal>9</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>门店访问量</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[门店访问量]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>门店访问量</remote-alias>
+              <ordinal>10</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>门店下单量</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[门店下单量]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>门店下单量</remote-alias>
+              <ordinal>11</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>无效订单</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[无效订单]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>无效订单</remote-alias>
+              <ordinal>12</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>有效订单</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[有效订单]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>有效订单</remote-alias>
+              <ordinal>13</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>曝光人数</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[曝光人数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>曝光人数</remote-alias>
+              <ordinal>14</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>506</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>进店人数</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[进店人数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>进店人数</remote-alias>
+              <ordinal>15</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>下单人数</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[下单人数]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>下单人数</remote-alias>
+              <ordinal>16</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cpc总费用</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cpc总费用]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cpc总费用</remote-alias>
+              <ordinal>17</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>490</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cpc曝光量</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cpc曝光量]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cpc曝光量</remote-alias>
+              <ordinal>18</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>457</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cpc访问量</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cpc访问量]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cpc访问量</remote-alias>
+              <ordinal>19</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>商户补贴</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[商户补贴]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>商户补贴</remote-alias>
+              <ordinal>20</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>450</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>平台补贴</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[平台补贴]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>平台补贴</remote-alias>
+              <ordinal>21</ordinal>
+              <family>拌客源数据1-8月</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>172</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:门店名称:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;拌客-武宁路店&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;蛙小辣-五角场店&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;蛙小辣-怒江路店&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;蛙小辣-龙阳广场店&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;蛙小辣-宝山店&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823497739:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526821138440:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商户补贴:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820298757:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:cpc总费用:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823198729:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:商家实收:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820446214:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='拌客源数据1-8月' id='拌客源数据1-8月_24E4C844DF884974A52F89989B6BB2D7'>
+            <properties context=''>
+              <relation connection='excel-direct.1y2jr5c189g1xi1h0pxex0e6ez13' name='拌客源数据1-8月' table='[&apos;拌客源数据1-8月$&apos;]' type='table'>
+                <columns gridOrigin='A1:V562:no:A1:V562:0' header='yes' outcome='2'>
+                  <column datatype='date' name='日期' ordinal='0' />
+                  <column datatype='integer' name='品牌ID' ordinal='1' />
+                  <column datatype='string' name='品牌名称' ordinal='2' />
+                  <column datatype='string' name='门店ID' ordinal='3' />
+                  <column datatype='string' name='门店名称' ordinal='4' />
+                  <column datatype='string' name='城市' ordinal='5' />
+                  <column datatype='string' name='平台' ordinal='6' />
+                  <column datatype='real' name='GMV' ordinal='7' />
+                  <column datatype='real' name='商家实收' ordinal='8' />
+                  <column datatype='integer' name='门店曝光量' ordinal='9' />
+                  <column datatype='integer' name='门店访问量' ordinal='10' />
+                  <column datatype='integer' name='门店下单量' ordinal='11' />
+                  <column datatype='integer' name='无效订单' ordinal='12' />
+                  <column datatype='integer' name='有效订单' ordinal='13' />
+                  <column datatype='integer' name='曝光人数' ordinal='14' />
+                  <column datatype='integer' name='进店人数' ordinal='15' />
+                  <column datatype='integer' name='下单人数' ordinal='16' />
+                  <column datatype='real' name='cpc总费用' ordinal='17' />
+                  <column datatype='integer' name='cpc曝光量' ordinal='18' />
+                  <column datatype='integer' name='cpc访问量' ordinal='19' />
+                  <column datatype='integer' name='商户补贴' ordinal='20' />
+                  <column datatype='integer' name='平台补贴' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='突出显示 1 (已生成)' name='[Action1_9105E95714224701821BE2A18BD4C906]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='营收占比趋势' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='门店名称' />
+        <param name='target' value='营收占比趋势' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='分级数据下钻'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>分级数据下钻</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+            <column-instance column='[品牌ID]' derivation='None' name='[none:品牌ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[品牌名称]' derivation='None' name='[none:品牌名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[平台]' derivation='None' name='[none:平台:nk]' pivot='key' type='nominal' />
+            <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GMV]' derivation='Sum' name='[sum:GMV:qk]' pivot='key' type='quantitative' />
+            <column caption='品牌id' datatype='integer' name='[品牌ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[品牌名称]' role='dimension' type='nominal' />
+            <column datatype='string' name='[平台]' role='dimension' type='nominal' />
+            <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:品牌名称:nk] / ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:品牌ID:ok] / ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk] / [federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:平台:nk])))</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]</cols>
+      </table>
+      <simple-id uuid='{22ABA45F-F9EC-4192-995C-7C8713FEC0A1}' />
+    </worksheet>
+    <worksheet name='成本趋势'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column caption='补贴占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526816317444]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([商户补贴])/SUM([GMV])' />
+            </column>
+            <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+            <column caption='Cpc总费用' datatype='real' name='[cpc总费用]' role='measure' type='quantitative' />
+            <column-instance column='[日期 (天)]' derivation='None' name='[none:日期 (天):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cpc总费用]' derivation='Sum' name='[sum:cpc总费用:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[商家实收]' derivation='Sum' name='[sum:商家实收:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[商户补贴]' derivation='Sum' name='[sum:商户补贴:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526816317444]' derivation='User' name='[usr:Calculation_1845068526816317444:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[商家实收]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[商户补贴]' role='measure' type='quantitative' />
+            <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+            </column>
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:cpc总费用:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商户补贴:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values] + [federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk])</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:日期 (天):qk]</cols>
+      </table>
+      <simple-id uuid='{2071DB35-1D55-416E-9CE3-CC65C8A60F1F}' />
+    </worksheet>
+    <worksheet name='流量趋势'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column caption='进店/曝光率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823198729]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([进店人数])/SUM([曝光人数])' />
+            </column>
+            <column caption='下单/进店率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823497739]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([下单人数])/SUM([进店人数])' />
+            </column>
+            <column-instance column='[日期 (天)]' derivation='None' name='[none:日期 (天):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[曝光人数]' derivation='Sum' name='[sum:曝光人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526823198729]' derivation='User' name='[usr:Calculation_1845068526823198729:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526823497739]' derivation='User' name='[usr:Calculation_1845068526823497739:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[下单人数]' role='measure' type='quantitative' />
+            <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+            </column>
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[曝光人数]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[进店人数]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823497739:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823198729:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+            <trendline degree='3' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+          </pane>
+        </panes>
+        <rows>([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk] + [federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values])</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:日期 (天):qk]</cols>
+      </table>
+      <simple-id uuid='{D1C3EB3A-5743-4A11-9A14-76932C9C77EC}' />
+    </worksheet>
+    <worksheet name='经营总览'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column caption='总订单数' datatype='integer' name='[Calculation_1845068526807662592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([有效订单])+SUM([无效订单])' />
+            </column>
+            <column caption='实收占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526808616962]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([商家实收])/SUM([GMV])' />
+            </column>
+            <column caption='门店数' datatype='integer' name='[Calculation_1845068526811975683]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([门店名称])' />
+            </column>
+            <column caption='补贴占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526816317444]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([商户补贴])/SUM([GMV])' />
+            </column>
+            <column caption='自然曝光人数' datatype='integer' name='[Calculation_1845068526820298757]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([曝光人数])-SUM([cpc曝光量])' />
+            </column>
+            <column caption='自然进店人数' datatype='integer' name='[Calculation_1845068526820446214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([进店人数])-SUM([cpc访问量])' />
+            </column>
+            <column caption='自然曝光占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526820925447]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1845068526820298757]/SUM([曝光人数])' />
+            </column>
+            <column caption='自然进店占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526821138440]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1845068526820446214]/SUM([进店人数])' />
+            </column>
+            <column caption='进店/曝光率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823198729]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([进店人数])/SUM([曝光人数])' />
+            </column>
+            <column caption='下单/进店率' datatype='real' default-format='p0.0%' name='[Calculation_1845068526823497739]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([下单人数])/SUM([进店人数])' />
+            </column>
+            <column caption='经营天数' datatype='integer' name='[Calculation_1845068526826184716]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([日期 (天)])' />
+            </column>
+            <column caption='单均实收' datatype='real' name='[Calculation_1845068526826438669]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([商家实收])/[Calculation_1845068526807662592]' />
+            </column>
+            <column caption='天均实收' datatype='real' name='[Calculation_1845068526826831886]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([商家实收])/[Calculation_1845068526811975683]' />
+            </column>
+            <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+            <column caption='Cpc总费用' datatype='real' name='[cpc总费用]' role='measure' type='quantitative' />
+            <column caption='Cpc曝光量' datatype='integer' name='[cpc曝光量]' role='measure' type='quantitative' />
+            <column caption='Cpc访问量' datatype='integer' name='[cpc访问量]' role='measure' type='quantitative' />
+            <column-instance column='[品牌名称]' derivation='None' name='[none:品牌名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GMV]' derivation='Sum' name='[sum:GMV:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cpc总费用]' derivation='Sum' name='[sum:cpc总费用:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[下单人数]' derivation='Sum' name='[sum:下单人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[商家实收]' derivation='Sum' name='[sum:商家实收:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[商户补贴]' derivation='Sum' name='[sum:商户补贴:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[无效订单]' derivation='Sum' name='[sum:无效订单:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[曝光人数]' derivation='Sum' name='[sum:曝光人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[进店人数]' derivation='Sum' name='[sum:进店人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526807662592]' derivation='User' name='[usr:Calculation_1845068526807662592:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526808616962]' derivation='User' name='[usr:Calculation_1845068526808616962:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526811975683]' derivation='User' name='[usr:Calculation_1845068526811975683:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526816317444]' derivation='User' name='[usr:Calculation_1845068526816317444:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526820925447]' derivation='User' name='[usr:Calculation_1845068526820925447:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526821138440]' derivation='User' name='[usr:Calculation_1845068526821138440:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526823198729]' derivation='User' name='[usr:Calculation_1845068526823198729:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526823497739]' derivation='User' name='[usr:Calculation_1845068526823497739:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526826184716]' derivation='User' name='[usr:Calculation_1845068526826184716:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526826438669]' derivation='User' name='[usr:Calculation_1845068526826438669:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526826831886]' derivation='User' name='[usr:Calculation_1845068526826831886:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[下单人数]' role='measure' type='quantitative' />
+            <column datatype='string' name='[品牌名称]' role='dimension' type='nominal' />
+            <column datatype='real' name='[商家实收]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[商户补贴]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[无效订单]' role='measure' type='quantitative' />
+            <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+            </column>
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[曝光人数]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[有效订单]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[进店人数]' role='measure' type='quantitative' />
+            <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526811975683:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826184716:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526808616962:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826831886:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526807662592:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826438669:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:下单人数:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:cpc总费用:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商户补贴:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526821138440:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823198729:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823497739:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526811975683:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826184716:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526808616962:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826831886:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:无效订单:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526807662592:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526826438669:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:下单人数:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:cpc总费用:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商户补贴:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526816317444:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526821138440:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823198729:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526823497739:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:品牌名称:nk] / [federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk])</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{27A3F17A-5C0B-4924-BC91-F179B77C62FD}' />
+    </worksheet>
+    <worksheet name='自然流量占比'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>虽然自然流量上升，但是整体流量下降，纯自然流量的做法仍需谨慎</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column caption='自然曝光人数' datatype='integer' name='[Calculation_1845068526820298757]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([曝光人数])-SUM([cpc曝光量])' />
+            </column>
+            <column caption='自然进店人数' datatype='integer' name='[Calculation_1845068526820446214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([进店人数])-SUM([cpc访问量])' />
+            </column>
+            <column caption='自然曝光占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526820925447]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1845068526820298757]/SUM([曝光人数])' />
+            </column>
+            <column caption='自然进店占比' datatype='real' default-format='p0.0%' name='[Calculation_1845068526821138440]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1845068526820446214]/SUM([进店人数])' />
+            </column>
+            <column caption='Cpc曝光量' datatype='integer' name='[cpc曝光量]' role='measure' type='quantitative' />
+            <column caption='Cpc访问量' datatype='integer' name='[cpc访问量]' role='measure' type='quantitative' />
+            <column-instance column='[日期 (天)]' derivation='None' name='[none:日期 (天):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[曝光人数]' derivation='Sum' name='[sum:曝光人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[进店人数]' derivation='Sum' name='[sum:进店人数:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526820298757]' derivation='User' name='[usr:Calculation_1845068526820298757:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526820446214]' derivation='User' name='[usr:Calculation_1845068526820446214:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526820925447]' derivation='User' name='[usr:Calculation_1845068526820925447:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1845068526821138440]' derivation='User' name='[usr:Calculation_1845068526821138440:qk]' pivot='key' type='quantitative' />
+            <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+            </column>
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[曝光人数]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[进店人数]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <encoding attr='space' class='0' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#e15759ef' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]' z-order='1' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820298757:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820446214:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526821138440:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820298757:qk] + ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:曝光人数:qk] + ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820925447:qk] + ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526820446214:qk] + ([federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:进店人数:qk] + [federated.1pfmpuy08ws5g91gjawch0ifvyt1].[usr:Calculation_1845068526821138440:qk])))))</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:日期 (天):qk]</cols>
+      </table>
+      <simple-id uuid='{69F8B5DC-F9E6-4E25-8E42-84DAA5F968D4}' />
+    </worksheet>
+    <worksheet name='营收占比'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>前两名GMV占比92%，后三名占比只有8%，门店实力分布严重不均</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+            <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GMV]' derivation='Sum' name='[pcto:sum:GMV:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[GMV]' derivation='Sum' name='[sum:GMV:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;拌客-武宁路店&quot;</bucket>
+              <bucket>&quot;蛙小辣-宝山店&quot;</bucket>
+              <bucket>&quot;蛙小辣-五角场店&quot;</bucket>
+              <bucket>&quot;蛙小辣-龙阳广场店&quot;</bucket>
+              <bucket>&quot;蛙小辣-怒江路店&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:GMV:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' />
+              <size column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]' />
+              <text column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:GMV:qk]' />
+              <text column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]</field>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;蛙小辣-五角场店&quot;</value>
+                <value>77124.820000000022</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]</field>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;蛙小辣-龙阳广场店&quot;</value>
+                <value>6452.04</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]</field>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]</field>
+                  <field>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:GMV:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;蛙小辣-怒江路店&quot;</value>
+                <value>4313.5699999999997</value>
+                <value>0.0040258307895227434</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{9FC03AF7-0953-4AD4-A211-B57B74AEEE42}' />
+    </worksheet>
+    <worksheet name='营收占比趋势'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[商家实收]' derivation='Sum' name='[pcto:sum:商家实收:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[商家实收]' derivation='Sum' name='[sum:商家实收:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[日期]' derivation='Month-Trunc' name='[tmn:日期:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[商家实收]' role='measure' type='quantitative' />
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:商家实收:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' />
+              <size column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]' />
+              <text column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' />
+              <text column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[pcto:sum:商家实收:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[tmn:日期:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7052BD5C-778D-468E-B5B5-7782A3E16F18}' />
+    </worksheet>
+    <worksheet name='营收趋势'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='拌客源数据1-8月 (Excel练习(1))' name='federated.1pfmpuy08ws5g91gjawch0ifvyt1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pfmpuy08ws5g91gjawch0ifvyt1'>
+            <column datatype='real' name='[GMV]' role='measure' type='quantitative' />
+            <column-instance column='[日期 (天)]' derivation='None' name='[none:日期 (天):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[门店名称]' derivation='None' name='[none:门店名称:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GMV]' derivation='Sum' name='[sum:GMV:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[商家实收]' derivation='Sum' name='[sum:商家实收:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[商家实收]' role='measure' type='quantitative' />
+            <column caption='营业日期' datatype='date' name='[日期 (天)]' role='dimension' type='quantitative' user:agg-type='Day-Trunc' user:base-field='日期' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;day&apos;, [日期]))' />
+            </column>
+            <column datatype='date' name='[日期]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[门店名称]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' />
+              <lod column='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:商家实收:qk]</rows>
+        <cols>[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:日期 (天):qk]</cols>
+      </table>
+      <simple-id uuid='{CF236526-64AC-4B4E-B3EC-0CD737EA5679}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='仪表板 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='3' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{07ACD4FC-3FA8-4E86-805F-36A6277B0744}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='分级数据下钻'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1D6BCCD-4923-478C-90A8-B73E719C6579}' />
+    </window>
+    <window class='worksheet' maximized='true' name='经营总览'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='20' type='pages' />
+            <card size='35' type='filters' />
+            <card size='105' type='marks' />
+            <card size='310' type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AA6F9C20-BB1E-435B-ADFF-F369E44DED6D}' />
+    </window>
+    <window class='worksheet' name='营收占比'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[sum:GMV:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8E1DADDD-D132-4E67-8A1D-B080BE12D797}' />
+    </window>
+    <window class='worksheet' name='营收趋势'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{04A91BCF-EE9D-42AE-BE44-CEC6B1C0F39C}' />
+    </window>
+    <window class='worksheet' name='营收占比趋势'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[none:门店名称:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8A9FBC93-DDAA-4BC5-AC1D-DD9833016351}' />
+    </window>
+    <window class='worksheet' name='成本趋势'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{40859C09-D73E-4F28-B740-AB2D6A377136}' />
+    </window>
+    <window class='worksheet' name='自然流量占比'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{02A14813-77E2-4AD5-B4D1-852A74F250E3}' />
+    </window>
+    <window class='worksheet' name='流量趋势'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pfmpuy08ws5g91gjawch0ifvyt1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3CB8719F-6CC4-481C-A356-3D0D68724472}' />
+    </window>
+    <window class='dashboard' name='仪表板 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{6C8EBC23-B357-445A-8F40-BA6FF495E0CF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='150' name='经营总览' width='192'>
+      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
+      1v4A/w8/M4wFxcycAgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
